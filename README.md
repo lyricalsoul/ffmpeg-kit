@@ -1,9 +1,10 @@
 # FFmpegKit ![GitHub release](https://img.shields.io/badge/release-v6.0-blue.svg) ![Maven Central](https://img.shields.io/maven-central/v/com.arthenica/ffmpeg-kit-min) ![CocoaPods](https://img.shields.io/cocoapods/v/ffmpeg-kit-ios-min) ![pub](https://img.shields.io/pub/v/ffmpeg_kit_flutter.svg) ![npm](https://img.shields.io/npm/v/ffmpeg-kit-react-native.svg)
 
+## Work in progress
 
-## Notice
+This fork does not support (and will not support) Android, Linux, React Native and Flutter. It will only support Apple platforms (iOS, macOS and tvOS).
 
-This fork does not support, and will not support, Android, Linux, React Native and Flutter platforms. It only supports Apple platforms (iOS, macOS and tvOS). If you want to use this project on those platforms... you are out of luck. Sorry! I accept PRs that add support for those platforms, though.
+If you want to use this project on the mentioned platforms... you are out of luck. Sorry.
 
 ## FFmpegKit
 
@@ -16,35 +17,15 @@ It includes scripts to build `FFmpeg` native libraries, a wrapper library to run
 ### 1. Features
 - Scripts to build FFmpeg native libraries
 - `FFmpegKit` wrapper library to run `FFmpeg`/`FFprobe` commands in applications
-- Supports native platforms: Android, iOS, Linux, macOS and tvOS
-- Supports hybrid platforms: Flutter, React Native
+- Supports native platforms: iOS, macOS and tvOS
 - Based on FFmpeg `v4.5-dev` or later with optional system and external libraries
 - 8 prebuilt binary packages available at [Github](https://github.com/arthenica/ffmpeg-kit/releases), [Maven Central](https://search.maven.org), [CocoaPods](https://cocoapods.org), [pub](https://pub.dev) and [npm](https://www.npmjs.com)
 - Licensed under `LGPL 3.0` by default, `GPL v3.0` if GPL licensed libraries are enabled
 
-### 2. Android
 
-See [Android](android) to learn more about `FFmpegKit` for `Android`.
+### Building
 
-### 3. iOS, macOS, tvOS
-
-See [Apple](apple) to use `FFmpegKit` on `Apple` platforms (`iOS`, `macOS`, `tvOS`).
-
-### 4. Flutter
-
-See [Flutter](flutter/flutter) to learn more about `FFmpegKit` for `Flutter`.
-
-### 5. Linux
-
-See [Linux](linux) to learn more about `FFmpegKit` for `Linux`.
-
-### 6. React Native
-
-See [React Native](react-native) to learn more about `FFmpegKit` for `React Native`.
-
-### 7. Build Scripts
-
-Use `android.sh`, `ios.sh`, `linux.sh`, `macos.sh` and `tvos.sh` to build `FFmpegKit` for each native platform.
+Use `ios.sh`, `macos.sh` and `tvos.sh` to build `FFmpegKit` for each native platform.
 
 All scripts support additional options to enable optional libraries and disable platform architectures. See
 [Building](https://github.com/arthenica/ffmpeg-kit/wiki/Building) wiki page for the details.
@@ -54,10 +35,6 @@ All scripts support additional options to enable optional libraries and disable 
 `FFmpegKit` is a wrapper library that allows you to easily run `FFmpeg`/`FFprobe` commands in applications. It 
 provides additional features on top of `FFmpeg` to enable platform specific resources, control how commands are 
 executed and how the results are handled.
-
-`Apple` libraries (`iOS`, `macOS`, `tvOS`) have an `Objective-C`
- API, `Flutter` library comes with a `Dart` API, `Linux` library has a `C++` API and `React Native` library provides
-a `JavaScript` API with `Typescript` definitions, which are identical in terms of features and capabilities.
 
 ### 9. Packages
 
